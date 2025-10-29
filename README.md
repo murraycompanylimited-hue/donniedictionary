@@ -1,2 +1,2 @@
 # donniedictionary
-Index.html
+index.html
