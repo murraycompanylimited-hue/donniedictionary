@@ -1,0 +1,50 @@
+add homepage (index-new.html)index-new.htmlAdded new homepage version to test before replacing index.html<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donnie Dictionary — Truth, the only option.</title>
+  <meta name="description" content="Donnie Dictionary decodes one word a day—etymology, law, symbol, spirit—to free the mind." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+<body class="dark">
+  <header>
+    <a href="index.html" class="logo">Donnie Dictionary</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Truth, the only option.</h1>
+      <p><em>“If a word can trap you, a word can free you.”</em></p>
+      <a class="cta" href="#watch">Watch Today’s Word</a>
+    </section>
+
+    <section id="watch" class="video">
+      <div class="video-frame">
+        <!-- Replace PLAYLIST_ID with your YouTube playlist ID -->
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed?listType=playlist&list=PLAYLIST_ID" title="Donnie Dictionary" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="hint">Tip: update the playlist ID to auto-show your newest episode.</p>
+    </section>
+
+    <section class="subscribe">
+      <h2>Get the Daily Word</h2>
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <input type="email" name="email" placeholder="your@email.com" required />
+        <button type="submit">Subscribe</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Donnie Dictionary subscriber">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 DonnieDictionary.com — All rights reserved.</p>
+  </footer>
+</body>
+</html>
