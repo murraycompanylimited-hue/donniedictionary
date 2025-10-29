@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,4 +12,104 @@
   <style>
     :root{
       --bg:#0b0e17; --panel:#0f1320; --muted:#9aa6b2; --ink:#e9edf4;
-      --accent:#0f172a; --accent-b:#2a3344; --btn:#121a2b;
+      --accent:#0f172a; --accent-b:#2a3344; --btn:#121a2b; --pill:#182036;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.6}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 16px}
+    .card{background:var(--panel);border:1px solid var(--accent-b);border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:28px}
+    h1{margin:0 0 6px;font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:.2px}
+    h3{margin:28px 0 8px 0;font-size:20px}
+    p.muted{color:var(--muted)}
+    .grid{display:grid;gap:18px;margin-top:18px}
+    @media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+    .pill{display:inline-block;background:var(--pill);border:1px solid var(--accent-b);border-radius:999px;padding:6px 12px;margin-bottom:10px;font-weight:600}
+    .button{display:inline-block;background:var(--btn);border:1px solid var(--accent-b);color:var(--ink);padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:600}
+    .button + .button{margin-left:10px}
+    footer{margin-top:24px;color:var(--muted);font-size:12px}
+    a:hover{opacity:.92}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="pill">Donnie Dictionary</span>
+      <h1>Words with Teeth • Clarity that Moves Money</h1>
+      <p class="muted">Daily word power, law-grade definitions, and plain-English breakdowns you can use in business, banking, and life.</p>
+
+      <div class="grid">
+        <div>
+          <h3>What you get</h3>
+          <p>Short, punchy episodes. Multiple definitions compared (standard &amp; legal). Memory hooks. Use-it-now examples.</p>
+        </div>
+        <div>
+          <h3>Work with us</h3>
+          <p>Email: <a href="mailto:MurrayCompanyLimited@gmail.com">MurrayCompanyLimited@gmail.com</a><br>
+             Voice/SMS: (513) 393-9217<br>
+             Mailing: General Delivery, Marietta, OH 45750-9999</p>
+        </div>
+      </div>
+
+      <div style="margin-top:14px">
+        <a class="button" href="https://murraycompanylimited.com" target="_blank">Murray Company Limited</a>
+        <a class="button" href="https://whitemarketunlimited.org" target="_blank">White Market Unlimited PMA</a>
+      </div>
+
+      <footer>© <span id="y"></span> Donnie Dictionary • A Murray Company Limited production</footer>
+    </div>
+  </div>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <!-- Graceful (Donnie Dictionary) -->
+  <style>
+   #graceful-btn{position:fixed;right:18px;bottom:18px;background:#111826;border:1px solid #2a3344;color:#e9edf4;
+    border-radius:999px;padding:12px 16px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.35);z-index:9999}
+   #graceful-panel{position:fixed;right:18px;bottom:78px;width:320px;max-width:92vw;background:#0f1320;color:#e9edf4;
+    border:1px solid #273244;border-radius:16px;box-shadow:0 18px 40px rgba(0,0,0,.45);padding:14px;display:none;z-index:9999}
+   #graceful-panel h4{margin:0 0 6px;font-size:16px}
+   #graceful-panel p{margin:0 0 8px;color:#9aa6b2;font-size:13px;line-height:1.5}
+   #graceful-panel textarea{width:100%;height:90px;border-radius:10px;border:1px solid #2b3550;background:#0b1020;color:#e9edf4;padding:10px;resize:vertical}
+   #graceful-actions{display:flex;gap:8px;margin-top:8px}
+   #graceful-actions a,#graceful-send{flex:1;text-align:center;text-decoration:none;background:#121a2b;border:1px solid #2a3344;
+    padding:10px;border-radius:10px;color:#e9edf4;font-weight:600}
+   #graceful-send{cursor:pointer}
+   #graceful-close{position:absolute;top:6px;right:10px;font-size:18px;color:#9aa6b2;cursor:pointer}
+  </style>
+  <div id="graceful-panel" role="dialog" aria-label="Graceful Concierge">
+    <div id="graceful-close" title="Close">×</div>
+    <h4>Graceful • Donnie Dictionary</h4>
+    <p>Ask a word, leave a note, or request help.</p>
+    <textarea id="graceful-msg" placeholder="Type your message..."></textarea>
+    <div id="graceful-actions">
+      <a href="tel:+15133939217">Call</a>
+      <a id="graceful-sms" href="sms:+15133939217">SMS</a>
+      <a id="graceful-email" href="mailto:MurrayCompanyLimited@gmail.com?subject=Donnie%20Dictionary%20Inquiry">Email</a>
+    </div>
+    <button id="graceful-send">Send via Email</button>
+  </div>
+  <button id="graceful-btn">Chat with Graceful</button>
+  <script>
+   (function(){
+    const p=document.getElementById('graceful-panel'),
+          b=document.getElementById('graceful-btn'),
+          x=document.getElementById('graceful-close'),
+          msg=document.getElementById('graceful-msg'),
+          sms=document.getElementById('graceful-sms'),
+          em=document.getElementById('graceful-email'),
+          send=document.getElementById('graceful-send');
+    function enc(s){return encodeURIComponent(s||'')}
+    function updateLinks(){
+      const body=enc(msg.value);
+      sms.href=`sms:+15133939217?&body=${body}`;
+      em.href=`mailto:MurrayCompanyLimited@gmail.com?subject=Donnie%20Dictionary%20Inquiry&body=${body}`;
+    }
+    b.onclick=()=>{p.style.display=(p.style.display==='block'?'none':'block');}
+    x.onclick=()=>{p.style.display='none';}
+    msg.oninput=updateLinks; updateLinks();
+    send.onclick=()=>{updateLinks(); window.location.href=em.href;}
+   })();
+  </script>
+  <!-- /Graceful -->
+</body>
+</html>
