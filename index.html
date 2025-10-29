@@ -31,6 +31,86 @@
   </style>
 </head>
 <body>
+  <!-- HERO: Donnie Dictionary -->
+<style>
+  .hero-dd{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:56px 16px 28px}
+  .hero-dd h1{font-size:clamp(28px,6vw,56px);margin:10px 0 4px;font-weight:800;letter-spacing:.2px}
+  .hero-dd .tag{color:#9aa6b2;text-transform:none;font-weight:700;letter-spacing:.3px;margin-bottom:8px}
+  .hero-dd .quote{color:#e9edf4;opacity:.92;font-style:italic;margin-top:10px}
+  .hero-dd .sil{width:min(420px,85vw);height:auto;margin:18px 0 6px}
+  .hero-dd .cta-row{margin-top:18px}
+  .btn-ghost{display:inline-block;background:#121a2b;border:1px solid #2a3344;color:#e9edf4;
+    padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:700}
+  .btn-ghost + .btn-ghost{margin-left:10px}
+  /* Word of the Day card tweaks to match site */
+  .wotd{background:#12141a;border:1px solid #1e2230;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.35);padding:22px;margin:18px auto;max-width:980px}
+  .wotd h3{margin:0 0 10px;font-size:20px}
+  .wotd .row{display:grid;gap:12px}
+  @media(min-width:760px){.wotd .row{grid-template-columns:1fr 1fr 1fr}}
+  .wotd .pill{display:inline-block;background:#182036;border:1px solid #2a3344;border-radius:999px;padding:6px 12px;margin:0 0 10px;font-weight:600}
+  .wotd p{color:#a5adba;margin:0}
+</style>
+
+<div class="hero-dd" id="top">
+  <!-- Neutral forward-facing silhouette with ember (placeholder) -->
+  <svg class="sil" viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Truth Warrior Silhouette">
+    <defs>
+      <radialGradient id="glow" cx="75%" cy="58%" r="22%">
+        <stop offset="0%" stop-color="#FF6A22"/><stop offset="60%" stop-color="#FF6A22" stop-opacity="0.35"/>
+        <stop offset="100%" stop-color="#FF6A22" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <!-- ember glow -->
+    <circle cx="300" cy="240" r="36" fill="url(#glow)"/>
+    <!-- head -->
+    <circle cx="200" cy="150" r="90" fill="#0f1320" stroke="#2a3344" stroke-width="2"/>
+    <!-- shoulders/chest -->
+    <path d="M60 340 C110 280, 290 280, 340 340 L340 420 L60 420 Z" fill="#0f1320" stroke="#2a3344" stroke-width="2"/>
+    <!-- tiny ember point -->
+    <circle cx="290" cy="240" r="6" fill="#FF6A22"/>
+  </svg>
+
+  <div class="tag">Truth. The only option.</div>
+  <h1>Donnie Dictionary</h1>
+  <div class="quote">“If a word can trap you, a word can free you.”</div>
+
+  <div class="cta-row">
+    <a class="btn-ghost" href="#wotd">Word of the Day</a>
+    <a class="btn-ghost" href="#archive">See Past Words →</a>
+  </div>
+</div>
+
+<!-- WORD OF THE DAY -->
+<div class="wotd" id="wotd">
+  <span class="pill">Word of the Day</span>
+  <h3>Authority</h3>
+  <div class="row">
+    <div>
+      <b>Standard</b>
+      <p>The right or power to give orders, make decisions, or enforce obedience.</p>
+    </div>
+    <div>
+      <b>Legal / Commercial</b>
+      <p>A recognized source of lawful command arising from competent jurisdiction and <i>consent</i>.</p>
+    </div>
+    <div>
+      <b>Cultural / Street</b>
+      <p>Who actually runs it when the dust settles.</p>
+    </div>
+  </div>
+  <div style="margin-top:10px">
+    <b>Use it to win:</b>
+    <p>Ask: “By what <i>authority</i> are you acting? Show the lawful basis for your demand.” If they can’t answer, authority collapses.</p>
+  </div>
+</div>
+
+<!-- ARCHIVE PLACEHOLDER -->
+<div class="wotd" id="archive">
+  <span class="pill">Archive</span>
+  <p>Past words will appear here as we publish daily. Next up: <b>Consideration</b>, <b>Capacity</b>, <b>Jurisdiction</b>, <b>Standing</b>.</p>
+</div>
+<!-- /HERO + WOTD -->
+  
   <div class="wrap">
     <div class="card">
       <span class="pill">Donnie Dictionary</span>
