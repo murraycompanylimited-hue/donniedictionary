@@ -16,7 +16,36 @@
     href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="black"/><circle cx="32" cy="32" r="20" fill="%23FFD700"/></svg>' />
 </head>
 <body>
-  <!-- HERO: Donnie Dictionary -->
+  <<main>
+  <section class="hero">
+    <div class="wordmark">
+      <span class="dd-top">DONNIE</span>
+      <span class="dd-bottom">DICTIONARY</span>
+    </div>
+    <p class="tag"><em>“If a word can trap you, a word can free you.”</em></p>
+    <a class="cta" href="#watch">Watch Today’s Word</a>
+  </section>
+
+  <section id="watch" class="video">
+    <!-- Temporary placeholder until YouTube is ready -->
+    <div class="video-placeholder">
+      <div class="vp-title">YouTube channel coming online</div>
+      <div class="vp-sub">Subscribe below to get the first drop.</div>
+    </div>
+  </section>
+
+  <section class="subscribe">
+    <h2>Get the Daily Word</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+      <input type="email" name="email" placeholder="your@email.com" required />
+      <button type="submit">Subscribe</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Donnie Dictionary subscriber">
+    </form>
+  </section>
+</main>
+  
+  !-- HERO: Donnie Dictionary -->
 <style>
   .hero-dd{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:56px 16px 28px}
   .hero-dd h1{font-size:clamp(28px,6vw,56px);margin:10px 0 4px;font-weight:800;letter-spacing:.2px}
