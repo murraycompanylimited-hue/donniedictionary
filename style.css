@@ -1,0 +1,113 @@
+/* ========= Donnie Dictionary Core Style ========= */
+
+/* Base */
+* { box-sizing: border-box; }
+body.dark {
+  background: #000;
+  color: #f5f5f5;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #222;
+}
+.logo {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: .04em;
+}
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+nav a.active {
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Main Layout */
+main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero */
+.wordmark { text-align: center; margin-bottom: .25rem; line-height: 1; }
+.dd-top, .dd-bottom {
+  display: block;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: #FFD700;
+  font-size: 2.2rem;
+}
+.tag { text-align: center; color: #d6d6d6; margin: .5rem 0 1.25rem; font-family: 'Playfair Display', serif; }
+.cta {
+  display: inline-block;
+  padding: .75rem 1.25rem;
+  border: 1px solid #FFD700;
+  border-radius: 999px;
+  color: #FFD700;
+  text-decoration: none;
+}
+.hero-links { margin-top: 1.25rem; text-align: center; }
+.link-about {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.link-about:hover { text-decoration: underline; }
+
+/* Video placeholder */
+.video-placeholder {
+  border: 1px solid #222;
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(180deg, #0b0b0b, #000);
+}
+.vp-title { font-weight: 800; letter-spacing: .03em; margin-bottom: .3rem; }
+.vp-sub { color: #aaa; font-size: .95rem; }
+
+/* Subscribe */
+.subscribe { text-align: center; margin: 3rem 0; }
+.subscribe form {
+  display: inline-flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.subscribe input {
+  padding: .75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  min-width: 260px;
+}
+.subscribe button {
+  padding: .75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #FFD700;
+  background: transparent;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+/* Contact */
+.contact {
+  text-align: center;
+  margin: 3rem 0;
+}
+.contact a {
+  color: #FFD700;
+  text
