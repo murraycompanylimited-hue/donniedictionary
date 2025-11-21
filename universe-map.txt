@@ -1,0 +1,8 @@
+Donnie Dictionary is the Core Mind. Branches include:
+- Donnie Discount (merchant)
+- Donnie Disinfectant (protector)
+- Donnie Diner (nourisher)
+- Donnie Detective (investigator)
+- Donnie Dispatch (messenger)
+- Donnie Deity (ascended form)
+
