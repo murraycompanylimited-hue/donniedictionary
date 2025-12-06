@@ -1,11 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Donnie Dictionary</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Donnie Dictionary – daily deep-dive into words, law, etymology, and the hidden layers of language.">
+  <meta charset="UTF-8" />
+  <title>Donnie Dictionary – Daily Word Ops</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Donnie Dictionary – daily deep-dive into words, law, etymology, and the hidden layers of language for people who actually read the fine print." />
+
+  <!-- Favicon (inline SVG, no extra files needed) -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" ry="12" fill="%23050509"/><text x="50%" y="52%" text-anchor="middle" font-size="26" fill="%23f5c744" font-family="system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif">DD</text></svg>'
+  />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="Donnie Dictionary – Daily Word Ops" />
+  <meta property="og:description" content="One word a day. Law, etymology, and the hidden architecture of language – decoded for executors, not spectators." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://murraycompanylimited-hue.github.io/donniedictionary/" />
+
+  <!-- Twitter Card (fallback) -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Donnie Dictionary – Daily Word Ops" />
+  <meta name="twitter:description" content="Daily word drops linking language, law, and the unseen structure of power." />
+
   <style>
     :root {
       --bg: #050509;
@@ -268,6 +286,18 @@
       margin-top: 4px;
     }
 
+    .channels {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .channels a {
+      font-size: 12px;
+    }
+
     .footer {
       margin-top: 18px;
       text-align: center;
@@ -278,6 +308,15 @@
     .footer strong {
       color: var(--accent);
       font-weight: 500;
+    }
+
+    .footer-strip {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+      font-size: 10px;
+      color: var(--muted);
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -350,7 +389,7 @@
         </div>
       </article>
 
-      <!-- RIGHT: ARCHIVE / PIPELINE / CONTACT -->
+      <!-- RIGHT: ARCHIVE / PIPELINE / CONTACT / CHANNELS -->
       <aside class="stack">
         <section class="card">
           <div class="small-card-title">Archive &amp; Flow</div>
@@ -362,6 +401,24 @@
         </section>
 
         <section class="card">
+          <div class="small-card-title">Where to Watch</div>
+          <div class="channels">
+            <div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">YOUTUBE</span><br />
+              <a href="#" title="YouTube channel coming online">YouTube channel – coming online</a>
+            </div>
+            <div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">TIKTOK</span><br />
+              <a href="#" title="TikTok pipeline">TikTok daily clips – pipeline</a>
+            </div>
+            <div><span style="font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);">INSTAGRAM</span><br />
+              <a href="#" title="Instagram drops">Instagram word cards – pipeline</a>
+            </div>
+          </div>
+          <div class="cta-block">
+            When those links go live, they drop right here first.
+          </div>
+        </section>
+
+        <section class="card">
           <div class="small-card-title">Submit a Word</div>
           <p class="etymology">
             Have a word you want decoded — legal, occult, corporate, or otherwise?
@@ -370,7 +427,7 @@
 
           <div class="cta-block">
             <p>
-              Email intake: 
+              Email intake:
               <a href="mailto:graceful@murraycompanylimited.com?subject=Donnie%20Dictionary%20Word%20Suggestion">
                 graceful@murraycompanylimited.com
               </a>
@@ -397,6 +454,10 @@
       <div>
         <strong>Donnie Dictionary</strong> · A Murray Company Limited Transmission ·
         All rights reserved to the ones who actually read.
+      </div>
+      <div class="footer-strip">
+        Donnie Dictionary is an educational word channel. Nothing here is legal, financial, or tax advice.
+        Always verify wording with a qualified professional before you sign, file, or fight.
       </div>
     </footer>
   </main>
